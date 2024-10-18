@@ -8,6 +8,10 @@
     color: #F9FAF8;  
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -215,6 +219,6 @@ button.signup:hover{
     scale: 1.1;
 }
 
-.card:hover.card p{
+/* .card:hover.card p{
     font-weight: 500;
-}
+} */
