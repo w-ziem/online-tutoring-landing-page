@@ -15,12 +15,15 @@
     <p>Jeśli masz pytania lub chcesz umówić się na lekcję, wypełnij formularz poniżej, a ja skontaktuję się z Tobą jak najszybciej!</p>
     <div class="center-container">
 
-    <form id="contact-from">
+    <form id="contact-form" name="submit-to-google-sheet">
         <label for="name">Imię:</label>
         <input type="text" id="name" name="name" required>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
+
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone" required>
 
         <label for="message">Wiadomość:</label>
         <textarea id="message" name="message" required></textarea>
@@ -37,5 +40,7 @@
 
 
     <p id="status"></p>
+
+    <script src="script.js"></script>
 </body>
 </html>
