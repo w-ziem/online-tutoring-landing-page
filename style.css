@@ -20,6 +20,7 @@ body{
 .hero{
     background-color: #1f2937;
     padding: 0 10% 10% 10%;
+    height: 100vh;
 }
 
 nav{
@@ -35,6 +36,7 @@ nav ul{
 }
 
 .nav-links a{
+    font-weight: 1.3rem;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -50,7 +52,7 @@ nav ul{
 .hero-content{
     display: flex;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 200px;
     justify-content: space-between;
 }
 
@@ -174,7 +176,7 @@ button.signup{
     display: flex;
     padding: 40px 70px;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center;        
     gap: 50px;
 }
 
@@ -218,7 +220,3 @@ button.signup:hover{
     background-color: #1f293725;
     scale: 1.1;
 }
-
-/* .card:hover.card p{
-    font-weight: 500;
-} */
