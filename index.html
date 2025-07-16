@@ -3,74 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Korepetycje Online</title>
+    <meta name="description" content="Korepetycje online z matematyki. Przygotujmy się razem do matury, egzaminu lub sprawdzianu.">
+    <meta name="keywords" content="korepetycje, matematyka, online, matura, egzamin, sprawdzian">
+    <meta name="author" content="Wojciech Ziemowicz">
+    <link rel="icon" href="images/bx-math.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <section class="hero">
-        <nav>
-            <h2 class="logo">Naucz<span>MY</span> Się!</h2>
-            <ul class="nav-links">
-                <li><a href="/contactForm.html">kontakt</a></li>
-                <li><a href="#info">współpraca</a></li>
-            </ul>            
-        </nav>
+    <section id="home" class="section">
+            <section class="hero">
+                <nav>
+                    <h2 class="logo">Naucz<span>MY</span> Się!</h2>
+                    <ul class="nav-links">
+                        <li><a href="#contact">kontakt</a></li>
+                        <li><a href="#info">współpraca</a></li>
+                    </ul>            
+                </nav>
 
-        <div class="hero-content">
-            <div class="left-hero">
-                <header><span>Obym zdał.<br></span>Zdam na 100!</header>
-                <p>Przygotujmy się razem podczas korepetycji online do matury/egzaminu/sprawdzianu z matematyki. Wszyzstko bez stresu i z wykorzstaniem najefektywniejszych metod przy śmiechu! <br> <i>Brzmi dobrze? Umów się na bezpłatną lekcję ↓</i></p>
-                <a href="/contactForm.html"><button class="signup">Zapisuję się!</button></a>
-            </div>
+                <div class="hero-content">
+                    <div class="left-hero">
+                        <header><span>Obym zdał.<br></span>Zdam na 100!</header>
+                        <p>Przygotujmy się razem podczas korepetycji online do matury/egzaminu/sprawdzianu z matematyki. Wszyzstko bez stresu i z wykorzstaniem najefektywniejszych metod przy śmiechu! <br> <i>Brzmi dobrze? Umów się na bezpłatną lekcję ↓</i></p>
+                        <a href="#contact"><button class="signup">Zapisuję się!</button></a>
+                    </div>
+                    
+                    <img src="images/lesson-image.png" alt="Photo of people learning together">
+                </div>
+            </section>
+            <section id="info" class="info-boxes">
+                <h2>Jak może wyglądać nasza współpraca?</h2>
+                <div class="card-container">
+                    <div data-aos="fade-up" class="card">
+                        <div class="card-image"><img src="images/bx-book-open.png" alt=""></div>
+                        <p>Opanuj potrzebny materiał korzystając z najlepszych materiałów, które Ci polecę <br> z doświadczenia.</p>
+                    </div>
+                    
+                    <div class="card" data-aos="fade-up">
+                        <div class="card-image"><img src="images/bx-math.png" alt=""></div>
+                        <p>Rozwijaj myślenie matematyczne <br> i w pełni samodzielnie rozwiązuj zadania. Nawet te nietypowe.</p>
+                    </div>
+                    
+                    <div class="card" data-aos="fade-up">
+                        <div class="card-image"><img src="images/bx-trending-up.png" alt=""></div>
+                        <p>Rozwijaj się korzystając ze swoich mocnych stron. To ciągła droga pozwalająca Ci być lepszym niż wczoraj.</p>
+                    </div>
+                    
+                    <div class="card" data-aos="fade-up">
+                        <div class="card-image"><img src="images/bxs-timer.png" alt=""></div>
+                        <p>Przyspiesz czas nauki poznając triki matematyczne <br> i mając możliwośc poproszenia  <br>o pomoc w każdym momencie</p>
+                    </div>
+                </div>
+                
 
-            <img src="images/lesson-image.jpg" alt="Photo of people learning together">
-        </div>
+            </section>
+            
+            <section class="quote-section">
+                <p id="quote">Nie ma ludzi &quot;niematematycznych&quot;, są tylko tacy, którzy nie spędzili nad tym wystarczająco czasu lub nikt nie przekazał im dobrego podejścia do nauki. Pozwolisz mi to zmienić? Czas, żebyś i ty zaczął być mistrzem.</p>
+            </section>
+            
+            <section id="contact-home" class="action-section">
+                <div class="center-container-home" data-aos="fade-up">
+                    <div class="text">
+                        <h3>Nie ma na co czekać!</h3>
+                        <p>Soktaktuj się ze mną, aby umówić się na bezpłatną lekcję, klikając w guzik obok.</p>
+                    </div>
+                    <a href="#contact"><button class="signup reverse">Soktaktuj się!</button></a>
+                </div>
+            </section>
     </section>
+    
+    
+    <section id="contact" class="section" >
 
-    <section id="info" class="info-boxes">
-        <h2>Jak może wyglądać nasza współpraca?</h2>
-        <div class="card-container">
-            <div class="card">
-                <div class="card-image"><img src="images/bx-book-open.png" alt=""></div>
-                <p>Opanuj potrzebny materiał korzystając z najlepszych materiałów, które Ci polecę <br> z doświadczenia.</p>
-            </div>
+        <h1 data-aos="fade-down">Skontaktuj się ze mną!</h1>
+        <p data-aos="fade-up">Jeśli masz pytania lub chcesz umówić się na lekcję, wypełnij formularz poniżej, a ja skontaktuję się z Tobą jak najszybciej!</p>
 
-            <div class="card">
-                <div class="card-image"><img src="images/bx-math.png" alt=""></div>
-                <p>Rozwijaj myślenie matematyczne <br> i w pełni samodzielnie rozwiązuj zadania. Nawet te nietypowe.</p>
-            </div>
-
-            <div class="card">
-                <div class="card-image"><img src="images/bx-trending-up.png" alt=""></div>
-                <p>Rozwijaj się korzystając ze swoich mocnych stron. To ciągła droga pozwalająca Ci być lepszym niż wczoraj.</p>
-            </div>
-
-            <div class="card">
-                <div class="card-image"><img src="images/bxs-timer.png" alt=""></div>
-                <p>Przyspiesz czas nauki poznając triki matematyczne <br> i mając możliwośc poproszenia  <br>o pomoc w każdym momencie</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="quote-section">
-        <p id="quote">Nie ma ludzi &quot;niematematycznych&quot;, są tylko tacy, którzy nie spędzili nad tym wystarczająco czasu lub nikt nie przekazał im dobrego podejścia do nauki. Pozwolisz mi to zmienić? Czas, żebyś i ty zaczął być mistrzem.</p>
-    </section>
-
-    <section id="contact" class="action-section">
         <div class="center-container">
-            <div class="text">
-                <h3>Nie ma na co czekać!</h3>
-                <p>Soktaktuj się ze mną, aby umówić się na bezpłatną lekcję, klikając w guzik obok.</p>
-            </div>
-            <a href="/contactForm.html"><button class="signup reverse">Soktaktuj się!</button></a>
+    
+            <form data-aos="fade-left" id="contact-form" name="submit-to-google-sheet">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" required>
+            
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" required></textarea>
+        
+                <button id="submit" type="submit">Wyślij</button>
+            </form>
+    
+            <ul data-aos="fade-right">
+                <h2>Możesz też się ze mną skontaktować przez:</h2>
+                <li>Email: <a href="mailto:ziembowiczwojciech@gmail.com">ziembowiczwojciech@gmail.com</a></li>
+                <li>Telefon: <a href="tel:+48721471591">+48 721471590</a></li>
+            </ul>
         </div>
-    </section>
 
-    <footer>
-        <a href="https://www.theodinproject.com/about">
-            <p id="copyright">Copyright ©The Odin Project 2021</p>
-        </a>
-        <a id="repository" href="https://github.com/w-ziem"><img id="github-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAtZJREFUSEvlltmrjlEUxn+HUlyIzGQMZQiZyR8gynjhQsYc51whxYWiRClEUjJkigspQynl2sUxZqaUeSpDUmR27Odrv6d9lr2/732/m3Nh1Vvf+37rWc/ea6/1rF1DC1lNC/FSlLgVMB4YAPSAEv4N8BS4BPzOu5G8xH2BdcBcoFMi+EfgFLAFeFxpAZWI27hdrAfWAvqdx34BW102NrrF/kgByhErlefcMyYPW8TnKjALeB3Dp4j7AQ1A9ypJM5hIJwPPbJwYcUfgMjDIOz/yRaSCymMi+Q4M9s4PgEnApxAcIz4CLAqcpjrgBWA0sA0YBiiYHp2n3ocAWuBqQCmeAlwMYhxwKV9ejniCb4vQp79vlzy7zXx0RGqzzBqB4cD97IPd8XFgvmEYBdwqwgoMBe4ZzEFgWYy4NfAe6BAA3vqVvitI3N4fRc8Ap0LrFSMe688n5FjhBGN3QdLMXWe6z2CVCdVGM8lUz50xjqrkJ1USa7evDHaG14ZmxMq/qi80gcMiKbKGdsAXA2jKYFhctcB+4zgSuF2ELfDtDTw32DXAdpvqOV7kQ9+lwOEqiWcCZw12MXDUEksEmvrMA867gpteJfFp14azDXYccM0S613tZMfeQuBYQXJhSjsL7LNv1dLMtgKy1xVTHfDTi4ZaTHYI2BCpUrseDReNQxFbkxQvyT5a4lBxVgI3fIspC3+A68AO4ISJKj3f7PU8NfFGuIvEnRSxvu8EVnkHTZVuTgJPBheBmIR2AaRyKdsVxCz5xFbX1g8KrTArLgVeAHwD9iSiSyxCiczcbvqZ/DXEpdLSB7jid1vv+1sTppxJ4XTGoUmfJwIvLLDc1UdBtGO1mSryISBR6Jpgl1jo/8zuusVPi5GmUh3GleypSjXgdbX9AHROEEtaNYfVEbowbPJHE3WvdMvMQNqJUj7QTZd5CWL17UtfA3Y4/APJS1zheIv//f8R/wWu0n4fd8acIQAAAABJRU5ErkJggg=="/>creator</a>
-    </footer>
+        <p id="status"></p>
+
+    </section>
+    
+    <a href="#hero" class="up">↑</a>
+<footer>
+    <a href="https://www.theodinproject.com/about">
+        <p id="copyright">Copyright ©The Odin Project 2021</p>
+    </a>
+    <a id="repository" href="https://github.com/w-ziem"><img id="github-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAtZJREFUSEvlltmrjlEUxn+HUlyIzGQMZQiZyR8gynjhQsYc51whxYWiRClEUjJkigspQynl2sUxZqaUeSpDUmR27Odrv6d9lr2/732/m3Nh1Vvf+37rWc/ea6/1rF1DC1lNC/FSlLgVMB4YAPSAEv4N8BS4BPzOu5G8xH2BdcBcoFMi+EfgFLAFeFxpAZWI27hdrAfWAvqdx34BW102NrrF/kgByhErlefcMyYPW8TnKjALeB3Dp4j7AQ1A9ypJM5hIJwPPbJwYcUfgMjDIOz/yRaSCymMi+Q4M9s4PgEnApxAcIz4CLAqcpjrgBWA0sA0YBiiYHp2n3ocAWuBqQCmeAlwMYhxwKV9ejniCb4vQp79vlzy7zXx0RGqzzBqB4cD97IPd8XFgvmEYBdwqwgoMBe4ZzEFgWYy4NfAe6BAA3vqVvitI3N4fRc8Ap0LrFSMe688n5FjhBGN3QdLMXWe6z2CVCdVGM8lUz50xjqrkJ1USa7evDHaG14ZmxMq/qi80gcMiKbKGdsAXA2jKYFhctcB+4zgSuF2ELfDtDTw32DXAdpvqOV7kQ9+lwOEqiWcCZw12MXDUEksEmvrMA867gpteJfFp14azDXYccM0S613tZMfeQuBYQXJhSjsL7LNv1dLMtgKy1xVTHfDTi4ZaTHYI2BCpUrseDReNQxFbkxQvyT5a4lBxVgI3fIspC3+A68AO4ISJKj3f7PU8NfFGuIvEnRSxvu8EVnkHTZVuTgJPBheBmIR2AaRyKdsVxCz5xFbX1g8KrTArLgVeAHwD9iSiSyxCiczcbvqZ/DXEpdLSB7jid1vv+1sTppxJ4XTGoUmfJwIvLLDc1UdBtGO1mSryISBR6Jpgl1jo/8zuusVPi5GmUh3GleypSjXgdbX9AHROEEtaNYfVEbowbPJHE3WvdMvMQNqJUj7QTZd5CWL17UtfA3Y4/APJS1zheIv//f8R/wWu0n4fd8acIQAAAABJRU5ErkJggg=="/>creator</a>
+</footer>
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

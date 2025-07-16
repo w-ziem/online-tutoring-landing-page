@@ -9,29 +9,33 @@
 }
 
 html{
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
     scroll-behavior: smooth;
 }
 
-section{
+section, footer{
     scroll-snap-align: start;
 }
 
 body{
     display: flex;
     flex-direction: column;
+    background-color: #1f2937;
 }
 
 .hero{
     background-color: #1f2937;
-    padding: 0 10% 10% 10%;
-    height: 100vh;
+    padding: 0 10% 5% 10%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
-    margin-top: 24px;
+    padding-top: 24px;
 }
 
 nav ul{
@@ -43,7 +47,7 @@ nav ul{
 .nav-links a{
     font-weight: 1.3rem;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease !important;
 }
 
 .logo{
@@ -57,7 +61,8 @@ nav ul{
 .hero-content{
     display: flex;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 80px;
+    gap: 40px;
     justify-content: space-between;
 }
 
@@ -73,11 +78,19 @@ header span{
     font-weight: 700;
 }
 
+a:hover{
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
 
 .left-hero{
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    max-width: 520px;
 }
 
 .left-hero p{
@@ -94,15 +107,22 @@ button.signup{
     width: 120px;
     font-weight: 500;
     font-size: 14px;
-    transition: all 0.4s ease;
+    transition: all 0.4s ease !important;
 }
 
 .hero-content img{
-    width: 400px;
+    max-width: 380px;
+    width: 38vw;
+    min-width: 220px;
+    margin-left: 32px;
     height: auto;
     object-fit: contain;
     border-radius: 25px;
     box-shadow: 5px 5px 10px rgba(255,255,255, 0.33);
+}
+
+#info{
+    background-color: #F9FAF8;
 }
 
 .info-boxes{
@@ -131,7 +151,7 @@ button.signup{
     align-items: center;
     width: 250px;
     padding: 25px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease !important;
     position: static;
     border-radius: 18px;
 }
@@ -176,7 +196,7 @@ button.signup{
     padding: 48px 64px;
 }
 
-.center-container{
+.center-container-home{
     background-color: #3882F6;
     display: flex;
     padding: 40px 70px;
@@ -193,7 +213,7 @@ button.signup.reverse{
 
 footer{
     background-color: #1f2937;
-    padding: 20px;
+    padding: 8px;
 }
 
 #copyright{
@@ -224,4 +244,403 @@ button.signup:hover{
 .card:hover{
     background-color: #1f293725;
     scale: 1.1;
+}
+
+
+.up{
+    position: sticky;
+    text-decoration: none;;
+    bottom: 20px;
+    color: rgba(56, 130, 246, 1);
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease !important;
+}
+
+#contact {
+    background-color: #1f2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+
+#contact nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: baseline;
+    align-self: flex-start;
+    margin-bottom: 50px;
+    margin-top: 15%;
+}
+
+#contact .logo a{
+    text-decoration: none;
+}
+
+#contact nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#contact .nav-links a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease !important;
+}
+
+#contact .logo{
+    font-size: 24px;
+}
+
+#contact .logo span{
+    color:#3882F6;
+}
+
+#contact label{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#contact input, textarea{
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    max-width: 600px;
+    color: #1f2937;
+}
+
+#contact button{
+    background-color: #3882F6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease !important;
+    font-size: 18px;
+    font-weight: 500;
+    width: 70%;
+}
+
+#contact button:hover{
+    background-color: #6093e6;
+    scale: 1.05;
+;
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2d3748;
+    margin-top: 10vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(60px);
+    animation: slideInForm 0.8s ease-out forwards;
+}
+
+@keyframes  slideInForm {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#contact h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: slideInHeader 0.8s ease-out forwards;
+}
+
+@keyframes slideInHeader {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+#contact .center-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    background-color: #1f2937;
+    padding: 40px 70px;
+}
+
+
+#contact .center-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15%;
+    margin-left: 80px;
+    width: 100%;
+}
+
+#contact .center-container ul h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+#contact .center-container li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- RESPONSYWNOŚĆ I POPRAWKI HERO + FORMULARZ --- */
+
+/* HERO - poprawki desktop */
+.hero {
+    min-height: 500px;
+    height: auto;
+    padding: 0 10% 5% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-content {
+    margin-top: 80px;
+    gap: 40px;
+}
+.left-hero {
+    max-width: 520px;
+}
+.hero-content img {
+    max-width: 380px;
+    width: 38vw;
+    min-width: 220px;
+    margin-left: 32px;
+}
+
+/* HERO - responsywność */
+@media (max-width: 1100px) {
+    .hero-content {
+        margin-top: 40px;
+        gap: 24px;
+    }
+    .hero-content img {
+        max-width: 300px;
+        margin-left: 16px;
+    }
+    .left-hero {
+        max-width: 420px;
+    }
+}
+@media (max-width: 900px) {
+    .hero {
+        padding: 0 4% 6% 4%;
+    }
+    .hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 32px;
+        gap: 24px;
+    }
+    .hero-content img {
+        margin: 0 auto;
+        max-width: 320px;
+        width: 90vw;
+        border-radius: 18px;
+    }
+    .left-hero {
+        max-width: 100%;
+        width: 100%;
+    }
+    header {
+        font-size: 36px;
+    }
+}
+@media (max-width: 600px) {
+    .hero {
+        padding: 0 2% 8% 2%;
+    }
+    .hero-content {
+        margin-top: 18px;
+        gap: 16px;
+    }
+    .hero-content img {
+        max-width: 98vw;
+        width: 100%;
+        border-radius: 12px;
+    }
+    header {
+        font-size: 24px;
+    }
+    .left-hero p {
+        font-size: 14px;
+    }
+}
+
+/* Karty i sekcja info */
+@media (max-width: 900px) {
+    .card-container {
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-bottom: 60px;
+    }
+    .card {
+        width: 180px;
+        padding: 14px;
+    }
+}
+@media (max-width: 600px) {
+    .info-boxes h2 {
+        font-size: 22px;
+        margin: 18px 0;
+    }
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+    .card {
+        width: 90vw;
+        max-width: 320px;
+        padding: 10px;
+    }
+    .card-image {
+        padding: 12px;
+    }
+}
+
+/* Quote section */
+@media (max-width: 900px) {
+    .quote-section {
+        padding: 40px 10vw;
+    }
+    #quote {
+        font-size: 22px;
+    }
+}
+@media (max-width: 600px) {
+    .quote-section {
+        padding: 18px 2vw;
+    }
+    #quote {
+        font-size: 15px;
+    }
+}
+
+/* CTA sekcja */
+@media (max-width: 900px) {
+    .center-container-home {
+        flex-direction: column;
+        gap: 18px;
+        padding: 18px 8px;
+        text-align: center;
+    }
+}
+
+/* Footer i przycisk UP */
+@media (max-width: 600px) {
+    footer {
+        padding: 8px;
+        font-size: 12px;
+    }
+    .up {
+        font-size: 18px;
+        padding: 7px 10px;
+    }
+}
+
+/* FORMULARZ KONTAKTOWY I KONTAKT */
+@media (max-width: 900px) {
+    #contact .center-container {
+        flex-direction: column;
+        gap: 24px;
+        padding: 18px 4vw;
+        align-items: stretch;
+    }
+    #contact form {
+        margin-top: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    #contact .center-container ul {
+        margin-left: 0;
+        margin-top: 24px;
+        width: 100%;
+    }
+    #contact .center-container ul h2 {
+        font-size: 22px;
+    }
+}
+@media (max-width: 600px) {
+    #contact h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    #contact label {
+        font-size: 16px;
+    }
+    #contact input, #contact textarea {
+        font-size: 15px;
+        padding: 7px;
+        width: 98%;
+        max-width: 98vw;
+    }
+    #contact button {
+        font-size: 15px;
+        padding: 10px 0;
+        width: 98%;
+    }
+    #contact form {
+        padding: 10px;
+        margin-top: 0;
+    }
+    #contact .center-container ul h2 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    #contact .center-container ul {
+        gap: 10px;
+    }
+}
+
+/* Drobne poprawki usability */
+a, button {
+    outline: none;
+}
+
+
+
+
+.hero, .hero header, .hero p, .hero button {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.hero.visible, .hero header.visible, .hero p.visible, .hero i.visible, .hero button.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -21,3 +21,31 @@ form.addEventListener('submit', e => {
     });
 
 });
+
+
+const upButton = document.querySelector('.up');
+upButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  document.querySelector('.hero').scrollIntoView({ behavior: 'smooth' });
+});
+
+
+
+
+window.addEventListener("load", () => {
+    const hero = document.querySelector(".hero");
+    const h1 = document.querySelector(".hero header");
+    const p = document.querySelector(".hero p");
+    const button = document.querySelector(".hero button");
+
+    hero.classList.add("visible");
+    setTimeout(() => {
+        h1.classList.add("visible");
+        setTimeout(() => {
+            p.classList.add("visible");
+            setTimeout(() => {
+                button.classList.add("visible");
+            }, 500);
+        }, 500);
+    }, 500);
+});
